@@ -12,4 +12,6 @@ if [ -d ./src/crypto/ore/fastore ]; then
   node-gyp configure
   node-gyp build
   cp src/crypto/ore/napi_ore.d.ts build/Release/
+else
+  exit 0
 fi
